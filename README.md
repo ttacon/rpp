@@ -13,8 +13,8 @@ const (
 )
 
 var (
-	err error
-	rpp *redis.Pool
+    err error
+    rpp *redis.Pool
 )
 
 if rpp, err = RPP("redis://x:foo@10.10.10.10:8443/5", MAX_ACTIVE, MAX_IDLE); err != nil {
